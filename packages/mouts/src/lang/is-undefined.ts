@@ -1,5 +1,3 @@
-import { isKind } from './is-kind';
-
-const isUndefined = (val: unknown): val is undefined =>
-  isKind(val, 'Undefined');
+const UNDEFINED = undefined;
+const isUndefined = (val: unknown): val is undefined => val === UNDEFINED;
 export { isUndefined };
