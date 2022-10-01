@@ -18,7 +18,8 @@
               }
             ]
           }
-        ]
+        ],
+        "no-new-wrappers": "error"
       }
     },
     {

@@ -1,11 +1,8 @@
 # mouts
 
-This library was generated with [Nx](https://nx.dev).
+Based on [mout](https://github.com/mout/mout) but modernized and written in Typescript.
 
-## Building
+## Recommendations
 
-Run `nx build mouts` to build the library.
-
-## Running unit tests
-
-Run `nx test mouts` to execute the unit tests via [Jest](https://jestjs.io).
+- use [no-new-wrappers](https://eslint.org/docs/latest/rules/no-new-wrappers) lint rule.
+- Some functions in this library will fail if using `new` with a primitive wrapper. For example, toNumber.

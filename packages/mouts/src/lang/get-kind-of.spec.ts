@@ -4,18 +4,18 @@ describe('lang/getKindOf()', function () {
   it('should get the kind of value', function () {
     expect(getKindOf('')).toEqual('String');
     expect(getKindOf('foo')).toEqual('String');
-    expect(getKindOf(new String('lorem'))).toEqual('String');
+    expect(getKindOf(String('lorem'))).toEqual('String');
     expect(getKindOf(String(123))).toEqual('String');
 
     expect(getKindOf(0)).toEqual('Number');
     expect(getKindOf(123)).toEqual('Number');
-    expect(getKindOf(new Number(123))).toEqual('Number');
+    expect(getKindOf(Number(123))).toEqual('Number');
     expect(getKindOf(Number('123'))).toEqual('Number');
 
     expect(getKindOf(true)).toEqual('Boolean');
     expect(getKindOf(false)).toEqual('Boolean');
-    expect(getKindOf(new Boolean(false))).toEqual('Boolean');
-    expect(getKindOf(new Boolean(true))).toEqual('Boolean');
+    expect(getKindOf(Boolean(false))).toEqual('Boolean');
+    expect(getKindOf(Boolean(true))).toEqual('Boolean');
     expect(getKindOf(Boolean(0))).toEqual('Boolean');
     expect(getKindOf(Boolean(1))).toEqual('Boolean');
 
