@@ -9,7 +9,7 @@ describe('object/forOwn()', function () {
     };
 
     const keys: string[] = [];
-    const vals: any[] = [];
+    const vals: unknown[] = [];
 
     forOwn(obj, function (val, key, o) {
       expect(o).toBe(obj);

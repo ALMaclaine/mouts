@@ -108,7 +108,7 @@ describe('object/forIn', function () {
 
     let count = 0;
 
-    forIn(obj, function (val, key, o) {
+    forIn(obj, function () {
       count++;
       if (count === 2) {
         return false;

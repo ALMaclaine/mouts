@@ -1,6 +1,6 @@
 import { isNumber } from './is-number';
-import { isInfinite } from 'mouts';
+import { isFinite } from './is-finite';
 
 const isFloat = (val: unknown): val is number =>
-  isInfinite(val) && isNumber(val) && val % 1 !== 0;
+  isFinite(val) && isNumber(val) && val % 1 !== 0;
 export { isFloat };
