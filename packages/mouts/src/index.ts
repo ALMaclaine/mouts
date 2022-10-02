@@ -14,6 +14,9 @@ import { toString } from './lang/to-string';
 import { isFunction } from './lang/is-function';
 import { isFinite } from './lang/is-finite';
 import { isPrimitive } from './lang/is-primitive';
+import { isNaN } from './lang/is-nan';
+import { isnt } from './lang/isnt';
+import { not } from './lang/not';
 
 //
 import { Printable } from './types/printable';
@@ -55,6 +58,9 @@ export { toArray };
 export { toNumber };
 export { isPrimitive };
 export { isFinite };
+export { isNaN };
+export { isnt };
+export { not };
 
 // types/printable
 export { Printable };
