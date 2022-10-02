@@ -5,11 +5,17 @@ import { isKind } from './lang/is-kind';
 import { isNull } from './lang/is-null';
 import { isNumber } from './lang/is-number';
 import { isPrintable } from './lang/is-printable';
+import { isRegex } from './lang/is-regex';
+import { isSized } from './lang/is-sized';
+import { toArray } from './lang/to-array';
+import { toNumber } from './lang/to-number';
 import { isUndefined } from './lang/is-undefined';
 import { toString } from './lang/to-string';
+import { isFunction } from './lang/is-function';
 
 //
 import { Printable } from './types/printable';
+import { Sized } from './types/sized';
 
 // lang/get-kind-of
 export { getKindOf };
@@ -29,6 +35,9 @@ export { isPrintable };
 // lang/is-undefined
 export { isUndefined };
 
+// lang/is-function
+export { isFunction };
+
 // lang/is
 export { is };
 
@@ -38,5 +47,13 @@ export { isArray };
 // lang/to-string
 export { toString };
 
+export { isRegex };
+export { isSized };
+export { toArray };
+export { toNumber };
+
 // types/printable
 export { Printable };
+
+// types/sized
+export { Sized };
