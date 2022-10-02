@@ -1,4 +1,4 @@
-import { isNull } from 'mouts';
+import { isNull } from '../lang/is-null';
 
 const isPrimitive = (
   val: unknown

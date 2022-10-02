@@ -22,6 +22,12 @@ import { not } from './lang/not';
 import { Printable } from './types/printable';
 import { Sized } from './types/sized';
 
+//
+import { get } from './object/get';
+
+//
+import { UNDEFINED, NULL } from './constants';
+
 // lang/get-kind-of
 export { getKindOf };
 
@@ -67,3 +73,9 @@ export { Printable };
 
 // types/sized
 export { Sized };
+
+// object
+export { get };
+
+// constants
+export { UNDEFINED, NULL };
