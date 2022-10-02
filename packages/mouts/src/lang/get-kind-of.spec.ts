@@ -34,6 +34,5 @@ describe('lang/getKindOf()', function () {
     expect(getKindOf(null)).toEqual('Null');
 
     expect(getKindOf(undefined)).toEqual('Undefined');
-    expect(getKindOf()).toEqual('Undefined');
   });
 });

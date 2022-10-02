@@ -5,7 +5,7 @@ import { isRegex } from './is-regex';
 import { isNull } from './is-null';
 import { isUndefined } from './is-undefined';
 
-const toArray = <T>(val?: unknown): T[] => {
+const toArray = <T>(val: unknown): T[] => {
   const ret: T[] = [];
   if (isNull(val) || isUndefined(val)) {
     return ret;

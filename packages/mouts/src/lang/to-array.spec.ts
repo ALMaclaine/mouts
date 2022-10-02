@@ -56,7 +56,6 @@ describe('lang/toArray()', function () {
   it('should return an empty array if nill value', function () {
     expect(toArray(null)).toEqual([]);
     expect(toArray(undefined)).toEqual([]);
-    expect(toArray()).toEqual([]);
   });
 
   // not working in jest

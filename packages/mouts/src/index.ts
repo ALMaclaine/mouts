@@ -12,6 +12,7 @@ import { toNumber } from './lang/to-number';
 import { isUndefined } from './lang/is-undefined';
 import { toString } from './lang/to-string';
 import { isFunction } from './lang/is-function';
+import { isFinite } from './lang/is-finite';
 
 //
 import { Printable } from './types/printable';
