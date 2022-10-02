@@ -11,8 +11,7 @@ import { toArray } from './lang/to-array';
 import { toNumber } from './lang/to-number';
 import { isUndefined } from './lang/is-undefined';
 import { toString } from './lang/to-string';
-import { isFunction } from './lang/is-function';
-import { isFinite } from './lang/is-finite';
+import { isInfinite } from './lang/is-finite';
 import { isPrimitive } from './lang/is-primitive';
 import { isNaN } from './lang/is-nan';
 import { isnt } from './lang/isnt';
@@ -46,9 +45,6 @@ export { isPrintable };
 // lang/is-undefined
 export { isUndefined };
 
-// lang/is-function
-export { isFunction };
-
 // lang/is
 export { is };
 
@@ -63,7 +59,7 @@ export { isSized };
 export { toArray };
 export { toNumber };
 export { isPrimitive };
-export { isFinite };
+export { isInfinite };
 export { isNaN };
 export { isnt };
 export { not };
