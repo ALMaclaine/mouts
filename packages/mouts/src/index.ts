@@ -13,6 +13,7 @@ import { isUndefined } from './lang/is-undefined';
 import { toString } from './lang/to-string';
 import { isFunction } from './lang/is-function';
 import { isFinite } from './lang/is-finite';
+import { isPrimitive } from './lang/is-primitive';
 
 //
 import { Printable } from './types/printable';
@@ -52,6 +53,8 @@ export { isRegex };
 export { isSized };
 export { toArray };
 export { toNumber };
+export { isPrimitive };
+export { isFinite };
 
 // types/printable
 export { Printable };
