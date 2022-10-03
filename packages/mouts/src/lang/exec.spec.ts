@@ -1,5 +1,5 @@
 import { exec } from './exec';
-import { ExecFunction } from '../types/exec-function';
+import { ExecFunction } from 'is-ts';
 
 describe('lang/exec()', () => {
   it('exec works', () => {

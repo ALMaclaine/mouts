@@ -1,4 +1,4 @@
-import { ExecFunction, ExecRecord, ExecReturn } from '../types/exec-function';
+import { ExecRecord, ExecFunction, ExecReturn } from 'is-ts';
 
 const exec = <T>(
   fn: ExecFunction,

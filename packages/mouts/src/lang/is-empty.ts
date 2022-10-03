@@ -1,9 +1,5 @@
-import { isUndefined } from './is-undefined';
-import { isNull } from './is-null';
-import { isString } from './is-string';
-import { isArray } from './is-array';
-import { isObject } from './is-object';
 import { forOwn } from '../object/for-own';
+import { isNull, isUndefined, isArray, isString, isObject } from 'is-ts';
 
 const isEmpty = (val: unknown): boolean => {
   // typeof null == 'object' so we check it first

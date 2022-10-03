@@ -1,6 +1,4 @@
-import { isNumber } from './is-number';
-import { isArray } from './is-array';
-import { isString } from './is-string';
+import { isNumber, isString, isArray } from 'is-ts';
 
 const toNumber = (val: unknown): number => {
   // numberic values should come first because of -0

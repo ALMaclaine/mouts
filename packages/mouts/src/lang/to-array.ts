@@ -1,6 +1,4 @@
-import { isSized } from './is-sized';
-import { isNull } from './is-null';
-import { isUndefined } from './is-undefined';
+import { isNull, isSized, isUndefined } from 'is-ts';
 
 const toArray = <T>(val: unknown): T[] => {
   const ret: T[] = [];
