@@ -1,5 +1,5 @@
+import { ExecFunction, ExecRecord } from 'is-ts';
 import { exec } from '../lang/exec';
-import { ExecFunction, ExecRecord } from '../types/exec-function';
 
 const forIn = <T>(obj: ExecRecord, fn: ExecFunction, self?: T): void => {
   for (const key in obj) {

@@ -1,12 +1,12 @@
 import { forIn } from './for-in';
-import { ExecFunction, ExecRecord } from '../types/exec-function';
 import { exec } from '../lang/exec';
 import { hasOwn } from './has-own';
+import { ExecRecord, ExecFunction } from 'is-ts';
 
 const forOwn = <T>(obj: ExecRecord, fn: ExecFunction, self?: T): void => {
   forIn<T>(
     obj,
-    function (val, key, objPassed) {
+    function (_val: unknown, key: string, objPassed: ExecRecord) {
       if (hasOwn(obj, key)) {
         return exec(fn, objPassed, key, self);
       }

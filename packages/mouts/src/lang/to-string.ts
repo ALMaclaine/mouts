@@ -1,7 +1,4 @@
-import { isArray } from './is-array';
-import { isNull } from './is-null';
-import { isUndefined } from './is-undefined';
-import { isPrintable } from './is-printable';
+import { isNull, isUndefined, isArray, isPrintable } from 'is-ts';
 
 const toString = (val: unknown): string => {
   if (isNull(val) || isUndefined(val)) {

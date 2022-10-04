@@ -22,6 +22,11 @@ import {
   isInteger,
   isNumber,
   isNaN,
+  ExecFunction,
+  ExecRecord,
+  ExecReturn,
+  Printable,
+  Sized,
 } from 'is-ts';
 
 import { toArray } from './lang/to-array';
@@ -30,25 +35,21 @@ import { toString } from './lang/to-string';
 import { not } from './lang/not';
 
 //
-import { Printable } from './types/printable';
-import { Sized } from './types/sized';
-
-//
 import { get } from './object/get';
 
 //
 import { UNDEFINED, NULL } from './constants';
 
+//
+
+import { Spread } from './types/spread';
+
+export { Spread };
+
 export { toArray, toNumber, not };
 
 // lang/to-string
 export { toString };
-
-// types/printable
-export { Printable };
-
-// types/sized
-export { Sized };
 
 // object
 export { get };
@@ -80,4 +81,9 @@ export {
   isInteger,
   isNumber,
   isNaN,
+  ExecFunction,
+  ExecRecord,
+  ExecReturn,
+  Printable,
+  Sized,
 };
