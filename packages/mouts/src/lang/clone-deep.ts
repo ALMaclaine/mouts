@@ -17,6 +17,7 @@ const cloneObject = (source: unknown, instanceClone: unknown): unknown => {
     const out = {};
     forOwn(
       source,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       function (this: any, val, key) {
         this[key] = _cloneDeep(val, instanceClone);
       },
