@@ -1,8 +1,10 @@
-const append = <T>(arr1: T[], arr2: T[] = []) => {
-  const { length: pad } = arr1;
-  const { length } = arr2;
-  for (let j = 0; j < length; j++) {
-    arr1[pad + j] = arr2[j];
+import { isArray } from 'is-ts';
+
+const append = <T>(arr1: T[], add: T[] | T = []) => {
+  if (isArray(add)) {
+    add.forEach((val) => arr1.push(val));
+  } else {
+    arr1.push(add);
   }
   return arr1;
 };

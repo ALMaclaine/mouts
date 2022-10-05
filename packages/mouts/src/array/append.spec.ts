@@ -15,4 +15,10 @@ describe('array/append()', function () {
     append(arr, undefined);
     expect(arr).toEqual([1]);
   });
+
+  it('should accept undefined second array', function () {
+    const arr = [1];
+    append(arr, 2);
+    expect(arr).toEqual([1, 2]);
+  });
 });
