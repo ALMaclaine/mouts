@@ -1,4 +1,4 @@
-import { every } from './every-array';
+import { everyArray } from './every-array';
 import { isEven } from 'is-ts';
 
 describe('array/every', function () {
@@ -7,14 +7,14 @@ describe('array/every', function () {
     const a2 = [1, 3, 5];
     const a3 = [2, 4, 6];
 
-    expect(every(a1, isEven)).toBe(false);
-    expect(every(a2, isEven)).toBe(false);
-    expect(every(a3, isEven)).toBe(true);
+    expect(everyArray(a1, isEven)).toBe(false);
+    expect(everyArray(a2, isEven)).toBe(false);
+    expect(everyArray(a3, isEven)).toBe(true);
   });
 
   it('should work on empty arrays', function () {
     //it is vacuously true that all elements of the empty set satisfy any given condition.
-    expect(every([], isEven)).toBe(true);
+    expect(everyArray([], isEven)).toBe(true);
   });
 
   it('should loop forwards to avoid undesired behavior', function () {
@@ -23,7 +23,7 @@ describe('array/every', function () {
     const a1 = [1, 3, 7];
     const result: number[] = [];
     expect(
-      every(a1, function (val) {
+      everyArray(a1, function (val) {
         result.push(val);
         return val !== 8;
       })

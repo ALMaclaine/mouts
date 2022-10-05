@@ -11,7 +11,7 @@ describe('object/forIn', function () {
     const keys: string[] = [];
     const vals: unknown[] = [];
 
-    forIn<unknown>(obj, function (val, key, o) {
+    forIn(obj, function (val, key, o) {
       expect(o).toMatchObject(obj);
       keys.push(key);
       vals.push(val);
