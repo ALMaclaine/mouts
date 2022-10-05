@@ -1,3 +1,4 @@
+// keep items that are unique amongst all arrays
 const uniqueFlat = <T>(...arrs: T[][]): T[] => {
   const uniqueSet = new Set<T>();
   const duplicateSet = new Set<T>();
