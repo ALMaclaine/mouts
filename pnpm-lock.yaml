@@ -51,9 +51,9 @@ importers:
 
   packages/mouts:
     specifiers:
-      is-ts: 0.0.14
+      is-ts: 0.0.15
     dependencies:
-      is-ts: 0.0.14_tslib@2.4.0
+      is-ts: 0.0.15_tslib@2.4.0
 
 packages:
 
@@ -2484,8 +2484,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /is-ts/0.0.14_tslib@2.4.0:
-    resolution: {integrity: sha512-pGTBKOjrG6rfHPXpwqavh/pnZ5jcib25tQyyc9AwwMOKsohuUsMkoyKj/TYI1Ik3DAnAMmCIf3E4CGuhHR1/QA==}
+  /is-ts/0.0.15_tslib@2.4.0:
+    resolution: {integrity: sha512-5ksO6VaVlDKCy6duJYx/Dij0GqJzz8qNjvvYtC2zBCL/TrDJM7TU7WlPXaXDF2tvPPvUG0bKQsaHRAbm5b0auQ==}
     peerDependencies:
       tslib: ^2.3.0
     dependencies:
