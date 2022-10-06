@@ -1,5 +1,5 @@
 import { isString } from 'is-ts';
-import { findLastIndex } from './find-index-last';
+import { findIndexLast } from './find-index-last';
 
 describe('array/findLastIndex', function () {
   it('should return index of first match starting from end of array', function () {
@@ -14,9 +14,9 @@ describe('array/findLastIndex', function () {
       return val.a === 1;
     };
 
-    expect(findLastIndex(items, findOne)).toEqual(2);
-    expect(findLastIndex(items, isString)).toEqual(4);
-    expect(findLastIndex(items, findObj)).toEqual(5);
+    expect(findIndexLast(items, findOne)).toEqual(2);
+    expect(findIndexLast(items, isString)).toEqual(4);
+    expect(findIndexLast(items, findObj)).toEqual(5);
   });
 
   it('should return -1 when not found', function () {
@@ -25,6 +25,6 @@ describe('array/findLastIndex', function () {
       return val === 2;
     };
 
-    expect(findLastIndex(items, findTwo)).toEqual(-1);
+    expect(findIndexLast(items, findTwo)).toEqual(-1);
   });
 });
