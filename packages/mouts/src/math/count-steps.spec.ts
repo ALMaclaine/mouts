@@ -11,4 +11,8 @@ describe('math/countSteps()', function () {
   it('should work with step fractures', function () {
     expect(countSteps(3.1415, 0.02, 10)).toEqual(7);
   });
+
+  it('no -0', function () {
+    expect(countSteps(-0, 0.02, 10)).toEqual(0);
+  });
 });

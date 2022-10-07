@@ -14,4 +14,8 @@ describe('math/lerp()', function () {
     expect(lerp(1, 20, 80)).toBe(80);
     expect(lerp(0.5, 0, 80)).toBe(40);
   });
+
+  it('no -0', function () {
+    expect(lerp(-0, -0, 80)).toBe(0);
+  });
 });

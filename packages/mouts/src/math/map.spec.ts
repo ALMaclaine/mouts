@@ -6,4 +6,8 @@ describe('math/map', function () {
     expect(map(-50, -100, 0, 0, 100)).toEqual(50);
     expect(map(0, -1, 1, 0, 100)).toEqual(50);
   });
+
+  it('no -0', function () {
+    expect(map(-0, -0, 1, -0, 100)).toEqual(0);
+  });
 });

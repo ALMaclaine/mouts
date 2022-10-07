@@ -29,7 +29,6 @@ import {
   Sized,
 } from 'is-ts';
 
-import { toArray } from './lang/to-array';
 import { toNumber } from './lang/to-number';
 import { toString } from './lang/to-string';
 import { not } from './lang/not';
@@ -46,7 +45,7 @@ import { Spread } from './types/spread';
 
 export { Spread };
 
-export { toArray, toNumber, not };
+export { toNumber, not };
 
 // lang/to-string
 export { toString };

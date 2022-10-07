@@ -38,4 +38,8 @@ describe('math/clamp()', function () {
       1234567890
     );
   });
+
+  it('no -0', function () {
+    expect(clamp(-0, -1, 10)).toEqual(0);
+  });
 });

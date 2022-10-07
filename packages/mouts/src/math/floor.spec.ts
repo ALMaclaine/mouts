@@ -8,4 +8,8 @@ describe('math/floor()', function () {
     expect(floor(122, 10)).toEqual(120);
     expect(floor(129, 10)).toEqual(120);
   });
+
+  it('no -0', function () {
+    expect(floor(-0)).toEqual(0);
+  });
 });
