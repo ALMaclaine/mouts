@@ -1,8 +1,5 @@
 {
   "name": "mouts",
   "version": "0.0.1",
-  "type": "commonjs",
-  "dependencies": {
-    "is-ts": "0.0.15"
-  }
+  "type": "commonjs"
 }

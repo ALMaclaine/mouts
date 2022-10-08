@@ -1,5 +1,5 @@
-import { isString } from 'is-ts';
 import { findIndexLast } from './find-index-last';
+import { isString } from '@mouts/is';
 
 describe('array/findLastIndex', function () {
   it('should return index of first match starting from end of array', function () {

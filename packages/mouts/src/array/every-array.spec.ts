@@ -1,5 +1,5 @@
 import { everyArray } from './every-array';
-import { isEven } from 'is-ts';
+import { isEven } from '@mouts/is';
 
 describe('array/every', function () {
   it('should work on normal array', function () {

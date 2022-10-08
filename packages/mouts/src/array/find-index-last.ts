@@ -1,4 +1,4 @@
-import { ArrayCallback } from '../types/array-callback';
+import { ArrayCallback } from '@mouts/types';
 
 const findIndexLast = <T>(arr: T[], cb: ArrayCallback<T>): number => {
   for (let i = arr.length - 1; i >= 0; i--) {

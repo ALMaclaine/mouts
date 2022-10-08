@@ -15,6 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mouts/constants": ["packages/constants/src/index.ts"],
+      "@mouts/is": ["packages/is/src/index.ts"],
+      "@mouts/math": ["packages/math/src/index.ts"],
+      "@mouts/types": ["packages/types/src/index.ts"],
       "mouts": ["packages/mouts/src/index.ts"]
     }
   },

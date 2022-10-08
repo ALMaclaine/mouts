@@ -1,5 +1,5 @@
 import { findIndex } from './find-index';
-import { isString } from 'is-ts';
+import { isString } from '@mouts/is';
 
 describe('array/findIndex', function () {
   it('should return index of first match', function () {

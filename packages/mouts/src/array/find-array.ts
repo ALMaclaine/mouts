@@ -1,4 +1,4 @@
-import { ArrayCallback } from '../types/array-callback';
+import { ArrayCallback } from '@mouts/types';
 
 const findArray = <T>(
   arr: T[],

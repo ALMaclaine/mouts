@@ -1,5 +1,5 @@
-import { ArrayCallback } from '../types/array-callback';
 import { findIndexLast } from './find-index-last';
+import { ArrayCallback } from '@mouts/types';
 
 const findLast = <T>(
   arr: T[],

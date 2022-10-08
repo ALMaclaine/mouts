@@ -1,5 +1,5 @@
 import { findArray } from './find-array';
-import { isObject } from 'is-ts';
+import { isObject } from '@mouts/is';
 
 describe('array/find', function () {
   it('should return first match', function () {

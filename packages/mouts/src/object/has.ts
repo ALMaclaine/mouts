@@ -1,5 +1,5 @@
 import { get } from './get';
-import { UNDEFINED } from '../constants';
+import { UNDEFINED } from '@mouts/constants';
 
 const has = (obj: Record<string, unknown>, prop: string) =>
   get(obj, prop) !== UNDEFINED;

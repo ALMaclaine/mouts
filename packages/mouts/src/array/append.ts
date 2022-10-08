@@ -1,4 +1,4 @@
-import { isArray } from 'is-ts';
+import { isArray } from '@mouts/is';
 
 const append = <T>(arr1: T[], add: T[] | T = []) => {
   if (isArray(add)) {
