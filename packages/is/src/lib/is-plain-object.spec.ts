@@ -4,7 +4,7 @@ describe('lang/isPlainObject', function () {
   it('should return true when plain object', function () {
     expect(isPlainObject({})).toBe(true);
     expect(isPlainObject({ test: true })).toBe(true);
-    expect(isPlainObject(new Object())).toBe(true);
+    expect(isPlainObject({})).toBe(true);
   });
 
   it('should return false when not an object', function () {

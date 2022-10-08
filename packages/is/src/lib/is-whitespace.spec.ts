@@ -1,5 +1,5 @@
 import { isWhitespace } from './is-whitespace';
-import { WHITE_SPACES } from 'is-ts';
+import { WHITE_SPACES } from '@mouts/constants';
 
 describe('lang/isWhitespace()', function () {
   it('isWhitespace works', () => {

@@ -49,8 +49,25 @@ importers:
       ts-node: 10.9.1_o3cqn7e5gjtu3y7kauu454ca2y
       typescript: 4.8.4
 
+  packages/constants:
+    specifiers: {}
+
+  packages/is:
+    specifiers:
+      '@mouts/constants': workspace:^0.0.1
+      '@mouts/types': workspace:^0.0.1
+    dependencies:
+      '@mouts/constants': link:../constants
+      '@mouts/types': link:../types
+
   packages/mouts:
     specifiers: {}
+
+  packages/types:
+    specifiers:
+      '@mouts/constants': workspace:^0.0.1
+    dependencies:
+      '@mouts/constants': link:../constants
 
 packages:
 

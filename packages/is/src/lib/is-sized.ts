@@ -1,6 +1,6 @@
-import { Sized } from '../types/sized';
 import { isObject } from './is-object';
 import { isArray } from './is-array';
+import { Sized } from '@mouts/types';
 
 const isSized = <T extends Sized>(val: unknown): val is T =>
   isArray(val) || (isObject(val) && 'length' in val);
