@@ -1,5 +1,4 @@
 import { toUInt31 } from './to-uint31';
-
 describe('number/toUInt31()', function () {
   it('should remove decimal digits', function () {
     expect(toUInt31(1.25)).toEqual(1);
@@ -18,5 +17,9 @@ describe('number/toUInt31()', function () {
     expect(toUInt31(Math.pow(2, 31) + 0.5)).toEqual(0);
     expect(toUInt31(Math.pow(2, 31) + 5.5)).toEqual(5);
     expect(toUInt31(Math.pow(2, 32) - 0.5)).toEqual(2147483647);
+  });
+
+  it('no -0', function () {
+    expect(toUInt31(-0)).toEqual(0);
   });
 });

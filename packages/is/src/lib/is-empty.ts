@@ -1,4 +1,3 @@
-import { forOwn } from '../../../object/src/lib/for-own';
 import { isArray, isNull, isObject, isString, isUndefined } from '@mouts/is';
 
 const isEmpty = (val: unknown): boolean => {
@@ -8,12 +7,7 @@ const isEmpty = (val: unknown): boolean => {
   } else if (isString(val) || isArray(val)) {
     return !val.length;
   } else if (isObject(val)) {
-    let result = true;
-    forOwn(val, function () {
-      result = false;
-      return false; // break loop
-    });
-    return result;
+    return Object.keys(val).length === 0;
   } else {
     return true;
   }

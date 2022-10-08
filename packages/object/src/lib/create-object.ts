@@ -1,4 +1,4 @@
-import { mixIn } from './mix-in';
+import { mixIn } from '@mouts/core';
 
 const createObject = <T, R>(parent: T, props?: R): T & R => {
   // eslint-disable-next-line @typescript-eslint/no-empty-function

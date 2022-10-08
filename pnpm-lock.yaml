@@ -49,8 +49,22 @@ importers:
       ts-node: 10.9.1_o3cqn7e5gjtu3y7kauu454ca2y
       typescript: 4.8.4
 
+  packages/array:
+    specifiers:
+      '@mouts/core': workspace:^0.0.1
+    dependencies:
+      '@mouts/core': link:../core
+
   packages/constants:
     specifiers: {}
+
+  packages/core:
+    specifiers:
+      '@mouts/is': workspace:^0.0.1
+      '@mouts/types': workspace:^0.0.1
+    dependencies:
+      '@mouts/is': link:../is
+      '@mouts/types': link:../types
 
   packages/is:
     specifiers:
@@ -60,7 +74,16 @@ importers:
       '@mouts/constants': link:../constants
       '@mouts/types': link:../types
 
+  packages/lang:
+    specifiers:
+      '@mouts/core': workspace:^0.0.1
+    dependencies:
+      '@mouts/core': link:../core
+
   packages/mouts:
+    specifiers: {}
+
+  packages/number:
     specifiers: {}
 
   packages/types:

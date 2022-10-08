@@ -1,6 +1,6 @@
 import { clone } from './clone';
-import { forOwn } from '../../../object/src/lib/for-own';
 import { isArray, isObject, isPlainObject } from '@mouts/is';
+import { forOwn } from './for-own';
 
 const _cloneDeep = (val: unknown, instanceClone: unknown): unknown => {
   if (isObject(val)) {

@@ -1,7 +1,7 @@
 import { forIn } from './for-in';
-import { hasOwn } from './has-own';
 import { ExecFunction, ExecRecord } from '@mouts/types';
-import { exec } from '@mouts/lang';
+import { exec } from './exec';
+import { hasOwn } from './has-own';
 
 const forOwn = <T>(obj: ExecRecord, fn: ExecFunction, self?: T): void => {
   forIn<T>(

@@ -1,5 +1,5 @@
 import { isArray, isDate, isObject, isPlainObject, isRegex } from '@mouts/is';
-import { mixIn } from '@mouts/object';
+import { mixIn } from './mix-in';
 
 const cloneObject = (source: unknown): unknown => {
   if (isPlainObject(source)) {

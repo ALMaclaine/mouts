@@ -1,5 +1,5 @@
 import { ExecFunction, ExecRecord } from '@mouts/types';
-import { exec } from '@mouts/lang';
+import { exec } from './exec';
 
 const forIn = <T>(obj: ExecRecord, fn: ExecFunction, self?: T): void => {
   for (const key in obj) {

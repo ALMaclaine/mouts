@@ -1,5 +1,5 @@
-import { append } from './append';
 import { ArrayCallback } from '@mouts/types';
+import { append } from '@mouts/core';
 
 // collect is like map except callback can return array of T
 const collect = <T>(arr: T[], cb: ArrayCallback<T, T | T[]>) => {

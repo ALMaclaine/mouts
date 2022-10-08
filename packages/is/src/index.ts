@@ -3,6 +3,7 @@ import { is } from './lib/is';
 import { isArray } from './lib/is-array';
 import { isBoolean } from './lib/is-boolean';
 import { isDate } from './lib/is-date';
+import { isEmpty } from './lib/is-empty';
 import { isEven } from './lib/is-even';
 import { isFalsy } from './lib/is-falsy';
 import { isFinite } from './lib/is-finite';
@@ -29,15 +30,12 @@ import { isWhitespace } from './lib/is-whitespace';
 import { isnt } from './lib/isnt';
 
 export {
-  is,
-  isnt,
-  isPrintable,
-  isRegex,
-  isWhitespace,
   getKindOf,
+  is,
   isArray,
   isBoolean,
   isDate,
+  isEmpty,
   isEven,
   isFalsy,
   isFinite,
@@ -47,15 +45,19 @@ export {
   isInteger,
   isIntegerString,
   isKind,
+  isNaN,
   isNull,
+  isNumber,
+  isNumberString,
+  isObject,
+  isOdd,
+  isPlainObject,
+  isPrimitive,
+  isPrintable,
+  isRegex,
   isSized,
   isString,
   isUndefined,
-  isNaN,
-  isNumber,
-  isNumberString,
-  isOdd,
-  isObject,
-  isPrimitive,
-  isPlainObject,
+  isWhitespace,
+  isnt,
 };

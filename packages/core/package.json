@@ -1,0 +1,9 @@
+{
+  "name": "@mouts/core",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "dependencies": {
+    "@mouts/is": "workspace:^0.0.1",
+    "@mouts/types": "workspace:^0.0.1"
+  }
+}

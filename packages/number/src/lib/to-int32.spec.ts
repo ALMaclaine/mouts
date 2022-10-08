@@ -18,4 +18,8 @@ describe('number/toInt32()', function () {
     expect(toInt32(Math.pow(-2, 31) - 0.5)).toEqual(-2147483648);
     expect(toInt32(Math.pow(-2, 31) + 0.5)).toEqual(-2147483647);
   });
+
+  it('no -0', function () {
+    expect(toInt32(-0)).toEqual(0);
+  });
 });

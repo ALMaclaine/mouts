@@ -24,4 +24,8 @@ describe('number/toUInt()', function () {
     expect(toUInt(Math.pow(2, 33) - 0.5)).toEqual(4294967295);
     expect(toUInt(Math.pow(2, 33) + 5.5)).toEqual(5);
   });
+
+  it('no -0', function () {
+    expect(toUInt(-0)).toEqual(0);
+  });
 });

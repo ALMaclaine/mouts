@@ -17,9 +17,9 @@
     "paths": {
       "@mouts/array": ["packages/array/src/index.ts"],
       "@mouts/constants": ["packages/constants/src/index.ts"],
+      "@mouts/core": ["packages/core/src/index.ts"],
       "@mouts/function": ["packages/function/src/index.ts"],
       "@mouts/is": ["packages/is/src/index.ts"],
-      "@mouts/lang": ["packages/lang/src/index.ts"],
       "@mouts/math": ["packages/math/src/index.ts"],
       "@mouts/number": ["packages/number/src/index.ts"],
       "@mouts/object": ["packages/object/src/index.ts"],
