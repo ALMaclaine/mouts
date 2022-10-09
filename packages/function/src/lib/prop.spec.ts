@@ -1,4 +1,4 @@
-import { prop } from './prop';
+import { prop } from './test/prop';
 
 describe('function/prop()', function () {
   it('should grab property from object', function () {

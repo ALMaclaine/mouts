@@ -1,4 +1,4 @@
-import { unifyZero } from './unify-zero';
+import { unifyZero } from '@mouts/core';
 
 const floor = (val: number, step = 1) => {
   const absStep = Math.abs(step);

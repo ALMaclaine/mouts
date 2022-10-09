@@ -1,5 +1,11 @@
 {
   "name": "@mouts/object",
   "version": "0.0.1",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "@mouts/constants": "workspace:^0.0.1",
+    "@mouts/core": "workspace:^0.0.1",
+    "@mouts/is": "workspace:^0.0.1",
+    "@mouts/types": "workspace:^0.0.1"
+  }
 }

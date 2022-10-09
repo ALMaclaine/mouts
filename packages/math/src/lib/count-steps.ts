@@ -1,4 +1,4 @@
-import { unifyZero } from './unify-zero';
+import { unifyZero } from '@mouts/core';
 
 const countSteps = (
   val: number,

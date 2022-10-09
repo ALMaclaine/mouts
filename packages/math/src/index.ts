@@ -1,5 +1,4 @@
 import { ceil } from './lib/ceil';
-import { clamp } from './lib/clamp';
 import { countSteps } from './lib/count-steps';
 import { floor } from './lib/floor';
 import { inRange } from './lib/in-range';
@@ -10,7 +9,7 @@ import { map } from './lib/map';
 import { norm } from './lib/norm';
 import { overflow } from './lib/overflow';
 import { round } from './lib/round';
-import { unifyZero } from './lib/unify-zero';
+import { clamp, unifyZero } from '@mouts/core';
 
 export {
   ceil,

@@ -80,11 +80,29 @@ importers:
     dependencies:
       '@mouts/core': link:../core
 
+  packages/math:
+    specifiers:
+      '@mouts/core': workspace:^0.0.1
+    dependencies:
+      '@mouts/core': link:../core
+
   packages/mouts:
     specifiers: {}
 
   packages/number:
     specifiers: {}
+
+  packages/object:
+    specifiers:
+      '@mouts/constants': workspace:^0.0.1
+      '@mouts/core': workspace:^0.0.1
+      '@mouts/is': workspace:^0.0.1
+      '@mouts/types': workspace:^0.0.1
+    dependencies:
+      '@mouts/constants': link:../constants
+      '@mouts/core': link:../core
+      '@mouts/is': link:../is
+      '@mouts/types': link:../types
 
   packages/types:
     specifiers:

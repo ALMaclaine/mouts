@@ -4,4 +4,3 @@ const sign = (num: number) => {
   return num < 0 ? -1 : 1;
 };
 export { sign };
-w;

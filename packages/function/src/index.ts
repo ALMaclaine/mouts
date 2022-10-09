@@ -1,2 +1,2 @@
-import { prop } from './lib/prop';
+import { prop } from './lib/test/prop';
 export { prop };
