@@ -2,13 +2,13 @@ import { collect } from './lib/collect';
 import { combine } from './lib/combine';
 import { contains } from './lib/contains';
 import { difference } from './lib/difference';
-import { everyArray } from './lib/every-array';
-import { filterArray } from './lib/filter-array';
-import { findArray } from './lib/find-array';
+import { every } from './lib/every';
+import { filter } from './lib/filter';
+import { find } from './lib/find';
 import { findIndex } from './lib/find-index';
 import { findIndexLast } from './lib/find-index-last';
 import { findLast } from './lib/find-last';
-import { flattenArray } from './lib/flatten-array';
+import { flatten } from './lib/flatten';
 import { forEach } from './lib/for-each';
 import { uniqueFlat } from './lib/unique-flat';
 import { append, equalsArray, sameSize } from '@mouts/core';
@@ -20,13 +20,13 @@ export {
   contains,
   difference,
   equalsArray,
-  everyArray,
-  filterArray,
-  findArray,
+  every,
+  filter,
+  find,
   findIndex,
   findIndexLast,
   findLast,
-  flattenArray,
+  flatten,
   forEach,
   sameSize,
   uniqueFlat,

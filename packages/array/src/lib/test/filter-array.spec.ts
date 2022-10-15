@@ -1,9 +1,9 @@
-import { filterArray } from '../filter-array';
+import { filter } from '../filter';
 
 describe('array/filter()', function () {
   it('should filter items', function () {
     const items = [1, 2, 3, 4, 5];
-    const result = filterArray(items, function (val) {
+    const result = filter(items, function (val) {
       return val % 2 !== 0;
     });
 
@@ -17,7 +17,7 @@ describe('array/filter()', function () {
     items[5] = 8;
     let count = 0;
 
-    const result = filterArray(items, function (val, i, arr) {
+    const result = filter(items, function (val, i, arr) {
       expect(arr).toBe(items);
       expect(val).toBe(items[i]);
       count += 1;
@@ -30,7 +30,7 @@ describe('array/filter()', function () {
 
   it('should return empty array if no items match', function () {
     const items = [1, 2, 3, 4, 5];
-    const result = filterArray(items, function () {
+    const result = filter(items, function () {
       return false;
     });
 

@@ -1,4 +1,4 @@
-import { findArray } from '../find-array';
+import { find } from '../find';
 import { isObject } from '@mouts/is';
 
 describe('array/find', function () {
@@ -7,17 +7,17 @@ describe('array/find', function () {
     const arr = [123, 'foo', 'bar', obj];
 
     expect(
-      findArray(arr, function (val) {
+      find(arr, function (val) {
         return val === 123;
       })
     ).toEqual(123);
     expect(
-      findArray(arr, function (val) {
+      find(arr, function (val) {
         return typeof val === 'string';
       })
     ).toEqual('foo');
     expect(
-      findArray(arr, function (val) {
+      find(arr, function (val) {
         return isObject(val) && val.a === 'b';
       })
     ).toEqual(obj);
