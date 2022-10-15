@@ -35,7 +35,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/math"],
+      "outputs": ["{workspaceRoot}/coverage/packages/math"],
       "options": {
         "jestConfig": "packages/math/jest.config.ts",
         "passWithNoTests": true
