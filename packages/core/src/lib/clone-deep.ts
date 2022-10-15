@@ -46,7 +46,11 @@ const cloneDeep = <T>(
   useStructured = true,
   instanceClone?: CallableFunction
 ): T => {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   if (globalThis.structuredClone && useStructured) {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     return globalThis.structuredClone(val) as T;
   } else {
     return _cloneDeep(val, instanceClone) as T;
