@@ -27,4 +27,14 @@ describe('string/truncate()', function () {
     expect(r2).toEqual('lorem ipsum=');
     expect(r1).toEqual(r2);
   });
+
+  it('should allow cropping at full words', function () {
+    const r1 = truncate(str, 10, { onlyFullWords: true });
+    expect(r1.length).toBeLessThan(11);
+    expect(r1).toEqual('lorem...');
+
+    const r2 = truncate(str, 14, { onlyFullWords: true });
+    expect(r2.length).toBeLessThan(15);
+    expect(r2).toEqual('lorem ipsum...');
+  });
 });

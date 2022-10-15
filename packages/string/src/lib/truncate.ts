@@ -12,13 +12,19 @@ const truncate = (
 ) => {
   const { append = '...', onlyFullWords = false } = options;
 
-  str = trim(str);
-  if (str.length <= maxChars) {
-    return str;
+  let newStr = trim(str);
+  if (newStr.length <= maxChars) {
+    return newStr;
   }
-  str = str.slice(0, maxChars - append.length);
+  newStr = newStr.slice(0, maxChars - append.length);
   //crop at last space or remove trailing whitespace
-  str = onlyFullWords ? str.slice(0, str.lastIndexOf(' ')) : trim(str);
-  return str + append;
+  const spaceIndex = str.indexOf(' ', newStr.length);
+  if (onlyFullWords && spaceIndex !== newStr.length) {
+    const index = newStr.lastIndexOf(' ');
+    newStr = newStr.slice(0, index);
+  } else {
+    newStr = trim(newStr);
+  }
+  return newStr + append;
 };
 export { truncate };
