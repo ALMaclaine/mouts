@@ -1,4 +1,4 @@
-import { equalsRegex } from './test/equals-regex';
+import { equalsRegex } from '../equals-regex';
 
 describe('equals/equalsDate()', function () {
   it('equalsDate works', function () {

@@ -1,4 +1,8 @@
-import { isArray, isNull, isObject, isString, isUndefined } from '@mouts/is';
+import { isArray } from './is-array';
+import { isNull } from './is-null';
+import { isObject } from './is-object';
+import { isString } from './is-string';
+import { isUndefined } from './is-undefined';
 
 const isEmpty = (val: unknown): boolean => {
   // typeof null == 'object' so we check it first

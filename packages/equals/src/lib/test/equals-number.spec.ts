@@ -1,4 +1,4 @@
-import { equalsNumber } from './test/equals-number';
+import { equalsNumber } from '../equals-number';
 
 describe('equals/equalsNumber()', function () {
   it('equalsNumber works', function () {

@@ -1,4 +1,4 @@
-import { equalsDate } from './test/equals-date';
+import { equalsDate } from '../equals-date';
 
 describe('equals/equalsDate()', function () {
   it('equalsDate works', function () {

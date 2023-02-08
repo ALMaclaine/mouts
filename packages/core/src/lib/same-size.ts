@@ -1,6 +1,6 @@
 import { Sized } from '@mouts/types';
 
-const sameSize = <T extends Sized>(val1: T, val2: T): boolean => {
+const sameSize = (val1: Sized, val2: Sized): boolean => {
   return val1.length === val2.length;
 };
 export { sameSize };

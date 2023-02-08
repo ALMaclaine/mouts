@@ -1,4 +1,4 @@
-import { equalsString } from './test/equals-string';
+import { equalsString } from '../equals-string';
 
 describe('equals/equalsString()', function () {
   it('equalsString works', function () {
